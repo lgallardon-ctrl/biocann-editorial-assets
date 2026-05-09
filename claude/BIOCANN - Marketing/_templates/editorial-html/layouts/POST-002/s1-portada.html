@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>POST-002 · S1 Portada</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../../components.css">
+<style>
+  body { background: var(--green); }
+  .b-canvas { background: var(--green); padding: 80px 64px 64px; display: flex; flex-direction: column; }
+  .b-wordmark { color: var(--white-pat); }
+  .b-coord { color: var(--white-pat); opacity: 0.55; }
+  .top-bar { display: flex; justify-content: space-between; align-items: center; padding-bottom: 48px; }
+  .series-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    border: 1px solid rgba(214,153,94,0.45); border-radius: 999px;
+    padding: 9px 18px;
+    font-family: var(--font-microcopy); font-weight: 500; font-size: 10px;
+    letter-spacing: 0.30em; text-transform: uppercase; color: var(--copper-light);
+  }
+  .headline-block { margin-top: 72px; flex: 1; }
+  .b-eyebrow { margin-bottom: 28px; }
+  h1 {
+    font-family: var(--font-display); font-weight: 200; font-size: 70px;
+    line-height: 1.10; letter-spacing: -0.02em; color: var(--white-pat);
+    max-width: 860px;
+  }
+  h1 em { font-weight: 300; font-style: italic; }
+  .subhead {
+    margin-top: 36px;
+    font-family: var(--font-microcopy); font-weight: 500; font-size: 18px;
+    line-height: 1.5; color: var(--white-pat); opacity: 0.72; max-width: 620px;
+  }
+  .hairline { width: 72px; height: 1px; background: var(--copper-light); margin: 40px 0 0; }
+</style>
+</head>
+<body>
+<div class="b-canvas b-canvas--feed noise-overlay">
+
+  <div class="top-bar">
+    <div class="b-wordmark">BIOCANN<sup>®</sup></div>
+    <div class="b-coord">42°08′S · 71°24′W · PATAGONIA</div>
+  </div>
+
+  <div class="b-eyebrow">ACCESO REGULADO · FAQ</div>
+
+  <div class="headline-block">
+    <h1>Todo lo que<br>querés saber<br>sobre <em>REPROCANN</em></h1>
+    <div class="hairline"></div>
+    <p class="subhead">Respuestas claras para pacientes que buscan acceso regulado al cannabis medicinal en Argentina.</p>
+  </div>
+
+  <div class="b-spacer"></div>
+
+  <div class="b-footer">
+    <div class="b-disclaimer">El acceso a productos derivados de cannabis medicinal está sujeto a evaluación profesional, documentación correspondiente y normativa vigente. La información brindada no reemplaza la consulta médica.</div>
+    <div class="b-pagination">01 / 07</div>
+  </div>
+
+</div>
+</body>
+</html>

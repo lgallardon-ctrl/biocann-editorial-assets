@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · T08 Story CTA DM — historia de conversión por mensaje directo</title>
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  /*
+    T08 — Story CTA DM
+    Story 1080x1920. Verde sólido. Diseñado para conversión por DM con palabra clave.
+    Uso: activación de leads con respuesta por DM (COBERTURA, DISPENSA, INFO, etc.)
+  */
+
+  body { background: var(--green); }
+
+  .canvas {
+    width: 1080px; height: 1920px;
+    background: var(--green);
+    display: flex;
+    flex-direction: column;
+    padding: 120px var(--story-margin) 96px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Noise */
+  .canvas::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.030 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    pointer-events: none;
+  }
+  .canvas > * { position: relative; z-index: 1; }
+
+  /* Background circle — ghost decorative */
+  .bg-circle {
+    position: absolute;
+    width: 900px; height: 900px;
+    border-radius: 50%;
+    border: 1px solid rgba(214,153,94,0.10);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  .bg-circle-2 {
+    width: 650px; height: 650px;
+    border-color: rgba(214,153,94,0.07);
+  }
+
+  .spacer { flex: 1 1 auto; }
+
+  /* Main headline */
+  .story-headline {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 1.08;
+    letter-spacing: -0.026em;
+    color: var(--white-pat);
+    margin-top: var(--sp-6);
+    max-width: 860px;
+  }
+  .story-headline em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--copper-light);
+  }
+
+  /* Hairline */
+  .story-hairline {
+    width: 80px; height: 1px;
+    background: var(--copper-light);
+    margin-top: var(--sp-5);
+  }
+
+  /* Instruction text */
+  .instruction {
+    font-family: var(--font-microcopy);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--white-pat);
+    opacity: 0.78;
+    margin-top: var(--sp-4);
+    max-width: 800px;
+  }
+
+  /* DM instruction row */
+  .dm-row {
+    margin-top: var(--sp-6);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .dm-label {
+    font-family: var(--font-microcopy);
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--white-pat);
+    opacity: 0.52;
+  }
+
+  /* Keyword box */
+  .keyword-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--copper-light);
+    padding: 24px 48px;
+    align-self: flex-start;
+  }
+  .keyword-text {
+    font-family: var(--font-display);
+    font-weight: 300; /* 600 reservado solo para wordmark — diferenciación por tamaño, no peso */
+    font-size: 72px;
+    letter-spacing: 0.18em;
+    color: var(--copper-light);
+    text-transform: uppercase;
+  }
+
+  /* After keyword */
+  .after-keyword {
+    font-family: var(--font-microcopy);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--white-pat);
+    opacity: 0.72;
+    margin-top: var(--sp-3);
+    max-width: 760px;
+  }
+
+  /* Bottom section */
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Arrow CTA */
+  .arrow-cta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--font-microcopy);
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+    opacity: 0.85;
+  }
+  .arrow-cta-line {
+    width: 40px; height: 1px;
+    background: var(--copper-light);
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="bg-circle"></div>
+  <div class="bg-circle bg-circle-2"></div>
+
+  <!-- Top bar -->
+  <div style="display:flex;justify-content:space-between;align-items:center;">
+    <div class="b-wordmark b-wordmark--story b-wordmark--light">BIOCANN<sup>®</sup></div>
+    <div class="b-coord b-coord--story b-coord--light">42°08′S · PATAGONIA</div>
+  </div>
+
+  <!-- Eyebrow -->
+  <div class="b-eyebrow b-eyebrow--story" style="margin-top:var(--sp-7);">[EYEBROW · PARA QUIÉN ES ESTO]</div>
+
+  <!-- Headline -->
+  <div class="story-headline">
+    [HEADLINE LINEA 1]<br>
+    [HEADLINE <em>LINEA 2</em>]<br>
+    [HEADLINE LINEA 3].
+  </div>
+
+  <div class="story-hairline"></div>
+
+  <!-- Instruction -->
+  <div class="instruction">
+    [FRASE INTRODUCCIÓN — ej: "Si querés saber cómo funciona, es simple."]
+  </div>
+
+  <!-- DM row -->
+  <!-- COMPLIANCE: la keyword debe ser institucional y neutral.
+       Keywords aprobadas: COBERTURA · DISPENSA · INFO · ACCESO · REPROCANN · CONSULTA
+       PROHIBIDO: palabras que impliquen resultado terapéutico (ALIVIO, CURA, TRATAMIENTO, DOLOR) -->
+  <div class="dm-row">
+    <div class="dm-label">Escribinos con la palabra</div>
+    <div class="keyword-box">
+      <div class="keyword-text">[PALABRA]</div>
+    </div>
+    <div class="after-keyword">
+      [CONTINUACIÓN — ej: "y te explicamos paso a paso. Sin presión, sin venta libre."]
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <!-- Bottom -->
+  <div class="bottom-section">
+    <div class="arrow-cta">
+      <div class="arrow-cta-line"></div>
+      MÁS INFO EN EL LINK DE NUESTRA BIO
+    </div>
+
+    <div style="font-family:var(--font-body);font-size: 22px;line-height:1.55;color:var(--white-pat);opacity:0.38;max-width:820px;">
+      Acceso a productos de cannabis sujeto a evaluación profesional, REPROCANN vigente y normativa regulatoria vigente. Información educativa. No sustituye la consulta médica.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

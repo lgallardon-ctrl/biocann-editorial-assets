@@ -1,0 +1,19 @@
+# biocann-ops tiene su propio repo git separado
+biocann-ops/
+
+# Node
+node_modules/
+.next/
+.env.local
+.env
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Render batch config (temporal)
+claude/BIOCANN - Marketing/_templates/editorial-html/batch-*.json

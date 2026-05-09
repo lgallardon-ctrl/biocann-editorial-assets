@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · Story Photo Split</title>
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  :root {
+    --photo-src: url('../img/sample_lab.jpg');
+    --photo-pos: center 50%;
+    --photo-filter: contrast(1.06) saturate(0.96);
+  }
+  .b-photo { background-image: var(--photo-src); background-position: var(--photo-pos); filter: var(--photo-filter); }
+</style>
+</head>
+<body>
+  <div class="b-canvas b-canvas--story">
+
+    <div class="b-photo b-photo--story-top">
+      <div class="b-top-bar">
+        <div class="b-wordmark b-wordmark--story">BIOCANN<sup>®</sup></div>
+        <div class="b-coord b-coord--story">42°08′S · 71°24′W · PATAGONIA</div>
+      </div>
+      <div class="b-product-tag" style="bottom: 36px; left: var(--story-margin);">[PRODUCT TAG]</div>
+    </div>
+
+    <div class="b-divider"></div>
+
+    <div class="b-green-block b-green-block--story noise-overlay" style="height: 740px;">
+      <div class="b-eyebrow b-eyebrow--story">[EYEBROW]</div>
+
+      <h1 class="b-headline b-headline--story">
+        [HEADLINE LINEA 1]<br>
+        [HEADLINE LINEA 2]<br>
+        [HEADLINE LINEA 3]<br>
+        [HEADLINE LINEA 4 con <em>palabra</em>]?
+      </h1>
+
+      <div class="b-hairline b-hairline--lg" style="margin-top: 36px;"></div>
+
+      <div class="b-subhead b-subhead--story">[SUBHEAD]</div>
+
+      <div class="b-spacer"></div>
+
+      <div class="b-cta-pill b-cta-pill--story" style="margin-bottom: 28px;">
+        [CTA TEXTO]
+        <span class="arrow">→</span>
+        [CTA URL]
+      </div>
+
+      <div class="b-footer">
+        <div class="b-disclaimer" style="font-size: 22px;">
+          El acceso a productos derivados de cannabis medicinal está sujeto a evaluación profesional, documentación correspondiente y normativa vigente. La información brindada no reemplaza la consulta médica.
+        </div>
+        <div class="b-pagination" style="font-size: 24px;">01 / 01</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

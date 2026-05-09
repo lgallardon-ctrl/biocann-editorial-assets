@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · T03 Feed Editorial Text — statement tipográfico puro</title>
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  /*
+    T03 — Feed Editorial Text
+    Sin foto. Tipografía como único protagonista.
+    Uso: reflexiones, citas, hallazgos, preguntas abiertas, datos cualitativos.
+    Variante base: Blanco Patagónico. Para variante verde: cambiar .canvas bg a var(--green).
+  */
+
+  body { background: var(--white-pat); }
+
+  .canvas {
+    width: 1080px; height: 1350px;
+    background: var(--white-pat);
+    display: flex;
+    flex-direction: column;
+    padding: 80px var(--feed-margin) 64px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Corner accent — thin copper vertical line, left */
+  .canvas::before {
+    content: '';
+    position: absolute;
+    top: 0; left: calc(var(--feed-margin) - 24px);
+    width: 1px;
+    height: 240px;
+    background: var(--copper-base);
+    opacity: 0.38;
+  }
+
+  /* Opening quote mark — ghost */
+  .quote-mark {
+    font-family: var(--font-display);
+    font-weight: 200;
+    font-size: 280px;
+    line-height: 1;
+    color: var(--copper-base);
+    opacity: 0.07;
+    position: absolute;
+    top: 72px;
+    left: calc(var(--feed-margin) - 20px);
+    letter-spacing: -0.06em;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .content { position: relative; z-index: 1; flex: 1 1 auto; display: flex; flex-direction: column; }
+
+  /* Category tag */
+  .category-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-microcopy);
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 0.38em;
+    text-transform: uppercase;
+    color: var(--carbon);
+    opacity: 0.55;
+  }
+  .category-tag::before {
+    content: '';
+    display: block;
+    width: 24px; height: 1px;
+    background: var(--copper-base);
+    opacity: 0.6;
+  }
+
+  /* Statement / quote */
+  .statement {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 1.12;
+    letter-spacing: -0.022em;
+    color: var(--carbon);
+    margin-top: var(--sp-5);
+    max-width: 900px;
+  }
+  .statement em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--green);
+  }
+
+  /* Attribution / source */
+  .attribution {
+    font-family: var(--font-body);
+    font-size: 26px;
+    line-height: 1.55;
+    color: var(--carbon);
+    opacity: 0.52;
+    margin-top: var(--sp-4);
+    padding-left: 28px;
+    border-left: 2px solid var(--copper-base);
+  }
+
+  /* Hairline */
+  .hairline {
+    width: 64px; height: 1px;
+    background: var(--copper-base);
+    margin-top: var(--sp-6);
+  }
+
+  /* Context paragraph */
+  .context {
+    font-family: var(--font-microcopy);
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--carbon);
+    opacity: 0.72;
+    margin-top: var(--sp-3);
+    max-width: 760px;
+  }
+
+  .spacer { flex: 1 1 auto; }
+
+  /* Bottom row */
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .wordmark-footer {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.04em;
+    color: var(--carbon);
+    opacity: 0.55;
+  }
+  .wordmark-footer sup { font-size: 26px; vertical-align: 10px; }
+  .coord-footer {
+    font-family: var(--font-microcopy);
+    font-size: 26px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--carbon);
+    opacity: 0.42;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="quote-mark">"</div>
+
+  <div class="content">
+    <!-- Top tag -->
+    <div class="category-tag">[CATEGORÍA · TIPO DE CONTENIDO]</div>
+
+    <!-- Statement -->
+    <div class="statement">
+      "[STATEMENT, CITA O HALLAZGO<br>
+      en 2-4 líneas, sin punto final<br>
+      si es una pregunta use <em>itálica</em><br>
+      para la palabra clave.]"
+    </div>
+
+    <!-- Attribution -->
+    <div class="attribution">
+      [FUENTE — equipo BIOCANN®, investigación, institución, temporada de cosecha o lote]
+    </div>
+
+    <div class="hairline"></div>
+
+    <!-- Context -->
+    <div class="context">
+      [CONTEXTO BREVE — 1-2 oraciones que explican el dato o la cita. Por qué importa para el paciente o el sector.]
+    </div>
+
+    <div class="spacer"></div>
+
+    <!-- Bottom -->
+    <div style="font-family:var(--font-body);font-size: 17px;line-height:1.55;color:var(--carbon);opacity:0.38;max-width:720px;margin-bottom:12px;">
+      El acceso a productos derivados de cannabis medicinal está sujeto a evaluación profesional y normativa vigente. Información educativa e institucional.
+    </div>
+
+    <div class="bottom-row">
+      <div class="wordmark-footer">BIOCANN<sup>®</sup></div>
+      <div class="coord-footer">42°08′S · 71°24′W · PATAGONIA</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

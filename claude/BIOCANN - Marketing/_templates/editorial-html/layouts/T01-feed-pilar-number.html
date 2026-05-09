@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · T01 Feed Pilar Number — slide de carrusel con numeración</title>
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  /* ── PARÁMETROS — modificar acá ─────────────────────────────────────────── */
+  :root {
+    --photo-src:    url('../img/sample_lab.jpg');
+    --photo-pos:    center 40%;
+    --number-label: "01";   /* 01 / 02 / 03 … */
+    --total-slides: "08";   /* paginación */
+  }
+
+  /* ── Layout ──────────────────────────────────────────────────────────────── */
+  .canvas {
+    width: 1080px; height: 1350px;
+    background: var(--white-pat);
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    grid-template-rows: 1fr;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Left column — text */
+  .col-text {
+    display: flex;
+    flex-direction: column;
+    padding: 72px var(--sp-6) 64px var(--feed-margin);
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Right column — photo */
+  .col-photo {
+    background-image: var(--photo-src);
+    background-size: cover;
+    background-position: var(--photo-pos);
+    position: relative;
+  }
+  .col-photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(270deg,
+      rgba(47,79,62,0) 60%,
+      rgba(247,245,240,0.85) 100%
+    );
+  }
+
+  /* Vertical copper hairline between columns */
+  .col-divider {
+    position: absolute;
+    top: 96px;
+    bottom: 80px;
+    left: 660px;
+    width: 1px;
+    background: var(--copper-base);
+    opacity: 0.45;
+    z-index: 3;
+  }
+
+  /* Giant number */
+  .pilar-number {
+    font-family: var(--font-display);
+    font-weight: 200;
+    font-size: 200px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--copper-base);
+    opacity: 0.22;
+    position: absolute;
+    top: 48px;
+    left: calc(var(--feed-margin) - 12px);
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* Number label over giant (active) */
+  .pilar-label {
+    font-family: var(--font-microcopy);
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.38em;
+    text-transform: uppercase;
+    color: var(--copper-base);
+    margin-bottom: var(--sp-2);
+  }
+
+  .headline-dark {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 1.14;
+    letter-spacing: -0.018em;
+    color: var(--carbon);
+    margin-top: var(--sp-2);
+    max-width: 540px;
+  }
+  .headline-dark em { font-weight: 400; font-style: italic; }
+
+  .hairline-dark {
+    width: 64px; height: 1px;
+    background: var(--copper-base);
+    margin-top: var(--sp-4);
+  }
+
+  .subhead-dark {
+    font-family: var(--font-microcopy);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.5;
+    color: var(--carbon);
+    opacity: 0.78;
+    margin-top: var(--sp-3);
+    max-width: 520px;
+  }
+
+  .body-dark {
+    font-family: var(--font-body);
+    font-size: 30px;
+    line-height: 1.75;
+    color: var(--carbon);
+    opacity: 0.65;
+    margin-top: var(--sp-3);
+    max-width: 500px;
+  }
+
+  .spacer { flex: 1 1 auto; }
+
+  /* Microcopy list */
+  .micro-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: var(--sp-4);
+  }
+  .micro-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-microcopy);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--carbon);
+    opacity: 0.72;
+  }
+  .micro-dot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--copper-base);
+    flex-shrink: 0;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: var(--sp-3);
+  }
+  .wordmark-sm {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.04em;
+    color: var(--carbon);
+    opacity: 0.6;
+  }
+  .wordmark-sm sup { font-size: 22px; vertical-align: 9px; }
+  .pagination-dark {
+    font-family: var(--font-microcopy);
+    font-size: 22px;
+    letter-spacing: 0.18em;
+    color: var(--copper-base);
+  }
+</style>
+</head>
+<body style="background:var(--white-pat);">
+<div class="canvas">
+
+  <!-- Giant ghost number -->
+  <div class="pilar-number">[01]</div>
+  <div class="col-divider"></div>
+
+  <!-- Left column: text -->
+  <div class="col-text">
+    <div class="b-coord">[EYEBROW · CATEGORÍA]</div>
+    <div class="pilar-label" style="margin-top:48px;">Pilar 01 de 03</div>
+
+    <h1 class="headline-dark">
+      [HEADLINE LINEA 1]<br>
+      [HEADLINE LINEA 2]<br>
+      [HEADLINE <em>LINEA 3</em>].
+    </h1>
+
+    <div class="hairline-dark"></div>
+
+    <div class="subhead-dark">
+      [SUBHEAD — una oración clara que amplía el headline sin repetirlo.]
+    </div>
+
+    <div class="body-dark">
+      [BODY OPCIONAL — desarrollo en 2-3 líneas. Separar ideas con punto. Datos técnicos bienvenidos.]
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="micro-list">
+      <div class="micro-item"><div class="micro-dot"></div>[DATO · TÉCNICO · 1]</div>
+      <div class="micro-item"><div class="micro-dot"></div>[DATO · TÉCNICO · 2]</div>
+      <div class="micro-item"><div class="micro-dot"></div>[DATO · TÉCNICO · 3]</div>
+    </div>
+
+    <div class="footer" style="margin-top:var(--sp-5);">
+      <div class="wordmark-sm">BIOCANN<sup>®</sup></div>
+      <div class="pagination-dark">01 / [TOTAL]</div>
+    </div>
+
+    <div style="font-family:var(--font-body);font-size: 18px;line-height:1.5;color:var(--carbon);opacity:0.42;margin-top:12px;max-width:500px;">
+      El acceso a productos derivados de cannabis medicinal está sujeto a evaluación profesional y normativa vigente. Información de carácter educativo.
+    </div>
+  </div>
+
+  <!-- Right column: photo -->
+  <div class="col-photo"></div>
+
+</div>
+</body>
+</html>

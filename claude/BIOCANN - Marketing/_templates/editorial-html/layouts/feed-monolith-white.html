@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · Feed Monolith Blanco (Blanco Patagónico institucional)</title>
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  body { background: var(--white-pat); }
+
+  .b-canvas {
+    background: var(--white-pat);
+    padding: 96px var(--feed-margin) 80px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Top bar overrides: dark on white */
+  .b-canvas .b-top-bar {
+    position: static;
+    padding: 0 0 36px 0;
+    display: flex;
+  }
+  .b-wordmark { color: var(--carbon); }
+  .b-coord {
+    color: var(--carbon);
+    opacity: 0.45;
+  }
+
+  /* Eyebrow uses copper-base (not copper-light) on white */
+  .b-eyebrow { color: var(--copper-base); }
+
+  /* Headline dark */
+  .b-headline { color: var(--carbon); }
+  .b-headline em { color: var(--green); }
+
+  /* Hairline dark copper */
+  .b-hairline { background: var(--copper-base); }
+
+  /* Subhead and body dark */
+  .b-subhead { color: var(--carbon); opacity: 0.78; }
+  .b-body { color: var(--carbon); opacity: 0.62; }
+
+  /* Accent bar — vertical strip of verde on left edge */
+  .accent-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: var(--green);
+  }
+
+  /* Micro list — para datos técnicos */
+  .micro-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 36px;
+  }
+  .micro-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--font-microcopy);
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--carbon);
+    opacity: 0.70;
+  }
+  .micro-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--copper-base);
+    flex-shrink: 0;
+  }
+
+  /* CTA pill dark variant */
+  .b-cta-pill {
+    border-color: var(--carbon);
+    color: var(--carbon);
+  }
+
+  /* Footer dark */
+  .b-disclaimer { color: var(--carbon); opacity: 0.45; }
+  .b-pagination { color: var(--copper-base); }
+</style>
+</head>
+<body>
+  <div class="b-canvas b-canvas--feed" style="position:relative;">
+
+    <!-- Accent bar verde izquierdo — señal visual de identidad BIOCANN -->
+    <div class="accent-bar"></div>
+
+    <!-- Top bar -->
+    <div class="b-top-bar">
+      <div class="b-wordmark">BIOCANN<sup>®</sup></div>
+      <div class="b-coord">42°08′S · 71°24′W · PATAGONIA</div>
+    </div>
+
+    <!-- Eyebrow -->
+    <div class="b-eyebrow">[EYEBROW · CATEGORÍA]</div>
+
+    <!-- Headline — máx 4 líneas, 6-8 palabras total. La última palabra clave en <em> (verde) -->
+    <h1 class="b-headline b-headline--xl" style="margin-top: 88px;">
+      [HEADLINE LINEA 1]<br>
+      [HEADLINE LINEA 2]<br>
+      [HEADLINE LINEA 3]<br>
+      [HEADLINE con <em>clave</em>].
+    </h1>
+
+    <!-- Hairline divisor copper -->
+    <div class="b-hairline b-hairline--lg" style="margin-top: 48px;"></div>
+
+    <!-- Subhead — 1 oración, max 12 palabras -->
+    <div class="b-subhead b-subhead--dark" style="margin-top: 32px;">
+      [SUBHEAD — una oración que amplía el headline sin repetirlo.]
+    </div>
+
+    <!-- Body opcional — separar ideas con punto · prefiero omitir que sobrecargar -->
+    <p class="b-body b-body--dark">[BODY OPCIONAL — dato · técnico · separado · por · puntos]</p>
+
+    <!-- Micro list — para posts educativos con 3 puntos de valor -->
+    <div class="micro-list">
+      <div class="micro-item"><div class="micro-dot"></div>[DATO · TÉCNICO · 1]</div>
+      <div class="micro-item"><div class="micro-dot"></div>[DATO · TÉCNICO · 2]</div>
+      <div class="micro-item"><div class="micro-dot"></div>[DATO · TÉCNICO · 3]</div>
+    </div>
+
+    <div class="b-spacer"></div>
+
+    <!-- CTA pill dark -->
+    <div class="b-cta-pill b-cta-pill--dark" style="margin-bottom: 28px;">
+      [CTA TEXTO]
+      <span class="arrow" style="color:var(--carbon);opacity:0.7;">→</span>
+      [CTA URL]
+    </div>
+
+    <!-- Footer -->
+    <div class="b-footer">
+      <div class="b-disclaimer b-disclaimer--dark">
+        El acceso a productos derivados de cannabis medicinal está sujeto a evaluación profesional, documentación correspondiente y normativa vigente. La información brindada no reemplaza la consulta médica.
+      </div>
+      <div class="b-pagination b-pagination--dark">01 / 01</div>
+    </div>
+
+  </div>
+</body>
+</html>

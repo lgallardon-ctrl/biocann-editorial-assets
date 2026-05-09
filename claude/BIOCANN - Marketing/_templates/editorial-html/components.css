@@ -1,0 +1,322 @@
+/* BIOCANN® — Editorial Design System · Components v1.0
+   Reusable UI components. Import after tokens.css.
+   Naming convention: .b- prefix for BIOCANN components.
+*/
+
+/* — Canvas wrappers */
+.b-canvas {
+  position: relative;
+  overflow: hidden;
+}
+.b-canvas--feed {
+  width: 1080px;
+  height: 1350px;
+}
+.b-canvas--story {
+  width: 1080px;
+  height: 1920px;
+}
+
+/* — Wordmark */
+.b-wordmark {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  color: var(--carbon);
+  white-space: nowrap;
+}
+.b-wordmark sup {
+  font-size: 24px;
+  vertical-align: 13px;
+  margin-left: 2px;
+  opacity: 0.85;
+}
+.b-wordmark--light { color: var(--white-pat); text-shadow: 0 1px 3px rgba(0,0,0,0.4); }
+.b-wordmark--story { font-size: 44px; }
+.b-wordmark--story sup { font-size: 26px; vertical-align: 14px; }
+
+/* — Coordinates */
+.b-coord {
+  font-family: var(--font-microcopy);
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: 0.30em;
+  text-transform: uppercase;
+  color: var(--carbon);
+  opacity: 0.72;
+  white-space: nowrap;
+}
+.b-coord--light {
+  color: var(--white-pat);
+  opacity: 0.92;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+}
+.b-coord--story { font-size: 28px; letter-spacing: 0.32em; }
+
+/* — Top bar (wordmark + coord) */
+.b-top-bar {
+  position: absolute;
+  top: 56px;
+  left: var(--feed-margin);
+  right: var(--feed-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+.b-canvas--story .b-top-bar {
+  top: 80px;
+  left: var(--story-margin);
+  right: var(--story-margin);
+}
+
+/* — Product tag (microcopy on photo, bottom-left) */
+.b-product-tag {
+  position: absolute;
+  bottom: 28px;
+  left: var(--feed-margin);
+  z-index: 2;
+  font-family: var(--font-microcopy);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.30em;
+  text-transform: uppercase;
+  color: var(--carbon);
+  opacity: 0.62;
+}
+.b-product-tag--light {
+  color: var(--white-pat);
+  opacity: 0.85;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+/* — Eyebrow */
+.b-eyebrow {
+  font-family: var(--font-microcopy);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--copper-light);
+}
+.b-eyebrow--story { font-size: 26px; }
+
+/* — Headline */
+.b-headline {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  color: var(--white-pat);
+  margin-top: 22px;
+  max-width: 880px;
+}
+.b-headline em {
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.01em;
+}
+.b-headline--xl { font-size: 64px; }
+.b-headline--lg { font-size: 56px; }
+.b-headline--md { font-size: 50px; }
+.b-headline--sm { font-size: 42px; }
+.b-headline--story { font-size: 54px; margin-top: 28px; }
+.b-headline--dark { color: var(--carbon); }
+
+/* — Hairline */
+.b-hairline {
+  width: 64px;
+  height: var(--hairline);
+  background: var(--copper-light);
+  margin-top: 30px;
+}
+.b-hairline--lg { width: 80px; }
+.b-hairline--dark { background: var(--copper-base); }
+
+/* — Subhead */
+.b-subhead {
+  font-family: var(--font-microcopy);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.45;
+  color: var(--white-pat);
+  opacity: 0.92;
+  margin-top: 22px;
+}
+.b-subhead--story { font-size: 40px; margin-top: 26px; }
+.b-subhead--dark { color: var(--carbon); opacity: 0.8; }
+
+/* — Body */
+.b-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.7;
+  color: var(--white-pat);
+  opacity: 0.74;
+  margin-top: 22px;
+  max-width: 560px;
+}
+.b-body--dark { color: var(--carbon); opacity: 0.78; }
+
+/* — CTA pill */
+.b-cta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: var(--pill-pad-y) var(--pill-pad-x);
+  border: 1px solid var(--copper-light);
+  border-radius: var(--pill-radius);
+  font-family: var(--font-microcopy);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--white-pat);
+  align-self: flex-start;
+}
+.b-cta-pill .arrow {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 26px;
+  opacity: 0.85;
+  letter-spacing: 0;
+}
+.b-cta-pill--dark {
+  border-color: var(--copper-base);
+  color: var(--carbon);
+}
+.b-cta-pill--story { font-size: 24px; padding: 14px 24px; }
+
+/* — Footer (disclaimer + pagination) */
+.b-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+}
+.b-disclaimer {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--white-pat);
+  opacity: 0.55;
+  max-width: 720px;
+  letter-spacing: 0.01em;
+}
+.b-disclaimer--dark { color: var(--carbon); opacity: 0.55; }
+.b-pagination {
+  font-family: var(--font-microcopy);
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.18em;
+  color: var(--copper-light);
+  white-space: nowrap;
+}
+.b-pagination--dark { color: var(--copper-base); }
+
+/* — Photo block (full bleed background image) */
+.b-photo {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.b-photo--feed-top { height: 540px; }
+.b-photo--feed-top-60 { height: 810px; }
+.b-photo--feed-full { height: 1350px; position: absolute; inset: 0; }
+.b-photo--story-top { height: 1180px; }
+.b-photo--story-full { height: 1920px; position: absolute; inset: 0; }
+.b-photo--enhance { filter: contrast(1.05) saturate(1.0); }
+
+/* — Hairline divider between blocks */
+.b-divider {
+  width: 100%;
+  height: var(--hairline);
+  background: var(--copper-light);
+}
+.b-divider--dark { background: var(--copper-base); }
+
+/* — Green block (typography zone over institutional green) */
+.b-green-block {
+  background: var(--green);
+  color: var(--white-pat);
+  padding: 56px var(--feed-margin) 56px var(--feed-margin);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.b-green-block--story { padding: 80px var(--story-margin) 80px var(--story-margin); }
+
+/* — Photo overlay gradient (used in overlay layouts) */
+.b-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(0,0,0,0.20) 0%,
+    rgba(0,0,0,0.10) 25%,
+    rgba(47,79,62,0) 45%,
+    rgba(47,79,62,0.55) 65%,
+    rgba(47,79,62,0.92) 82%,
+    rgba(47,79,62,0.97) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* — Bottom content (used inside photo-overlay layout) */
+.b-content-bottom {
+  position: absolute;
+  left: var(--feed-margin);
+  right: var(--feed-margin);
+  bottom: 56px;
+  z-index: 3;
+  color: var(--white-pat);
+}
+
+/* — Spacer (used to push CTA to bottom of green block) */
+.b-spacer { flex: 1 1 auto; min-height: 12px; }
+
+/* — Accent bar (left edge strip, used in Blanco Monolith) */
+.b-accent-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--accent-bar-width);
+  background: var(--green);
+}
+
+/* — Micro list (used in Blanco Monolith for technical data) */
+.b-micro-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.b-micro-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-microcopy);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--carbon);
+  opacity: 0.70;
+}
+.b-micro-item::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--copper-base);
+  flex-shrink: 0;
+}
+.b-micro-item--light { color: var(--white-pat); opacity: 0.72; }
+.b-micro-item--light::before { background: var(--copper-light); }

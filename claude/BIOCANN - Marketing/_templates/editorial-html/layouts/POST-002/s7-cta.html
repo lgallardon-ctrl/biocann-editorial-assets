@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>POST-002 · S7 CTA</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../../components.css">
+<style>
+  body { background: var(--green); }
+  .b-canvas { background: var(--green); padding: 80px 64px 64px; display: flex; flex-direction: column; }
+  .top-bar { display: flex; justify-content: space-between; align-items: center; padding-bottom: 56px; }
+  .b-wordmark { color: var(--white-pat); }
+  .b-coord { color: var(--white-pat); opacity: 0.50; }
+  .b-eyebrow { color: var(--copper-light); margin-bottom: 0; }
+  .headline {
+    font-family: var(--font-display); font-weight: 200; font-size: 62px;
+    line-height: 1.12; letter-spacing: -0.02em; color: var(--white-pat);
+    max-width: 820px; margin-top: 24px;
+  }
+  .headline em { font-weight: 300; font-style: italic; }
+  .hairline { width: 64px; height: 1px; background: var(--copper-light); margin: 44px 0; }
+  .subhead {
+    font-family: var(--font-microcopy); font-weight: 500; font-size: 18px;
+    line-height: 1.5; color: var(--white-pat); opacity: 0.70; max-width: 640px;
+  }
+  .cta-group { margin-top: 60px; display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
+  .b-cta-pill { font-size: 11px; }
+  .cta-secondary {
+    font-family: var(--font-microcopy); font-weight: 500; font-size: 13px;
+    letter-spacing: 0.10em; color: var(--white-pat); opacity: 0.60;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .cta-secondary::before { content: ''; display: block; width: 24px; height: 1px; background: currentColor; }
+</style>
+</head>
+<body>
+<div class="b-canvas b-canvas--feed noise-overlay">
+
+  <div class="top-bar">
+    <div class="b-wordmark">BIOCANN<sup>®</sup></div>
+    <div class="b-coord">42°08′S · 71°24′W · PATAGONIA</div>
+  </div>
+
+  <div class="b-eyebrow">ACCESO REGULADO · BIOCANN®</div>
+
+  <p class="headline">Acompañamiento<br>desde la<br><em>consulta inicial.</em></p>
+
+  <div class="hairline"></div>
+
+  <p class="subhead">Te guiamos en el trámite de REPROCANN y en el acceso a coberturas con productos trazables de genética registrada en INASE.</p>
+
+  <div class="cta-group">
+    <div class="b-cta-pill">
+      VER COBERTURAS
+      <span class="arrow">→</span>
+      biocann.ar/pricing-plans/list
+    </div>
+    <div class="cta-secondary">+54 9 11 5984-2468 · WhatsApp</div>
+  </div>
+
+  <div class="b-spacer"></div>
+
+  <div class="b-footer">
+    <div class="b-disclaimer">El acceso a productos derivados de cannabis medicinal está sujeto a evaluación profesional, documentación correspondiente y normativa vigente. La información brindada no reemplaza la consulta médica.</div>
+    <div class="b-pagination">07 / 07</div>
+  </div>
+
+</div>
+</body>
+</html>

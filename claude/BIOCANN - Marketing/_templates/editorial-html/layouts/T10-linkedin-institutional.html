@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · T10 LinkedIn Institutional — post horizontal B2B institucional</title>
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  /*
+    T10 — LinkedIn Institutional
+    Canvas 1200x628px (ratio 1.91:1 — estándar LinkedIn post image).
+    Split: verde izquierda 44% / blanco patagónico derecha 56%.
+    Uso: anuncios institucionales B2B, alianzas, farmacias, ONGs, inversores, novedades regulatorias.
+    Render: python3 render.py T10-linkedin-institutional.html out.png --linkedin
+    (o sin flag: cropea a 1200x628 por defecto si se setea el canvas abajo)
+  */
+
+  body { background: var(--green); margin: 0; padding: 0; }
+
+  .canvas {
+    width: 1200px; height: 628px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Left — green block */
+  .col-green {
+    width: 528px;
+    background: var(--green);
+    padding: 52px 48px 48px 72px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .col-green::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.030 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    pointer-events: none;
+  }
+  .col-green > * { position: relative; z-index: 1; }
+
+  /* Vertical copper hairline */
+  .divider {
+    width: 1px;
+    background: var(--copper-light);
+    opacity: 0.4;
+    flex-shrink: 0;
+  }
+
+  /* Right — white block */
+  .col-white {
+    flex: 1 1 auto;
+    background: var(--white-pat);
+    padding: 52px 64px 48px 56px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Wordmark small */
+  .lk-wordmark {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    color: var(--white-pat);
+  }
+  .lk-wordmark sup { font-size: 18px; vertical-align: 8px; }
+
+  /* Headline — green side */
+  .lk-headline-green {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--white-pat);
+    margin-top: var(--sp-4);
+    max-width: 440px;
+  }
+  .lk-headline-green em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--copper-light);
+  }
+
+  /* Hairline on green */
+  .lk-hairline-green {
+    width: 48px; height: 1px;
+    background: var(--copper-light);
+    margin-top: var(--sp-3);
+  }
+
+  /* Coord bottom green */
+  .lk-coord {
+    font-family: var(--font-microcopy);
+    font-size: 22px;
+    letter-spacing: 0.30em;
+    text-transform: uppercase;
+    color: var(--white-pat);
+    opacity: 0.42;
+    margin-top: auto;
+  }
+
+  /* Category tag — white side */
+  .lk-category {
+    font-family: var(--font-microcopy);
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    color: var(--copper-base);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .lk-category::before {
+    content: '';
+    display: block;
+    width: 20px; height: 1px;
+    background: var(--copper-base);
+  }
+
+  /* Headline — white side */
+  .lk-headline-white {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: -0.018em;
+    color: var(--carbon);
+    margin-top: var(--sp-3);
+    max-width: 560px;
+  }
+  .lk-headline-white em { font-style: italic; font-weight: 400; color: var(--green); }
+
+  /* Hairline on white */
+  .lk-hairline-white {
+    width: 48px; height: 1px;
+    background: var(--copper-base);
+    margin-top: var(--sp-3);
+  }
+
+  /* Subhead */
+  .lk-subhead {
+    font-family: var(--font-microcopy);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: var(--carbon);
+    opacity: 0.72;
+    margin-top: var(--sp-2);
+    max-width: 560px;
+  }
+
+  .spacer { flex: 1 1 auto; }
+
+  /* CTA pill — dark */
+  .lk-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: 1px solid var(--copper-base);
+    border-radius: 999px;
+    font-family: var(--font-microcopy);
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--carbon);
+    align-self: flex-start;
+  }
+
+  /* Disclaimer */
+  .lk-disclaimer {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--carbon);
+    opacity: 0.38;
+    margin-top: 10px;
+    max-width: 580px;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <!-- Green column -->
+  <div class="col-green">
+    <div class="lk-wordmark">BIOCANN<sup>®</sup></div>
+
+    <div class="lk-headline-green">
+      [HEADLINE LINEA 1]<br>
+      [<em>HEADLINE LINEA 2</em>]<br>
+      [LINEA 3].
+    </div>
+
+    <div class="lk-hairline-green"></div>
+
+    <div class="lk-coord">42°08′S · 71°24′W · PATAGONIA ARGENTINA</div>
+  </div>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- White column -->
+  <div class="col-white">
+    <div class="lk-category">[CATEGORÍA · ÁREA · ALIANZA]</div>
+
+    <div class="lk-headline-white">
+      [HEADLINE DERECHA — más específico,<br>
+      orientado a la audiencia B2B]
+    </div>
+
+    <div class="lk-hairline-white"></div>
+
+    <div class="lk-subhead">
+      [SUBHEAD — 1-2 líneas con el dato o propuesta concreta para la audiencia B2B: farmacias, ONGs, inversores, laboratorios.]
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="lk-cta">
+      [CTA TEXTO] <span style="font-size: 26px;font-weight:300;">→</span> [CTA URL]
+    </div>
+
+    <div class="lk-disclaimer">
+      El acceso a productos derivados de cannabis medicinal está sujeto a normativa regulatoria vigente. Información de carácter institucional y educativo.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

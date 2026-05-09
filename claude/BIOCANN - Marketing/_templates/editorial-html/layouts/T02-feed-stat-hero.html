@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · T02 Feed Stat Hero — dato/métrica dominante</title>
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  /* ── PARÁMETROS — modificar acá ─────────────────────────────────────────── */
+  /* Variante verde (institucional) o blanca (editorial):                       */
+  /* Para variante blanca: cambiar --bg a var(--white-pat) y ajustar colores   */
+  :root {
+    --stat-value: "98.3%";      /* el número / dato protagonista */
+    --stat-unit:  "";           /* unidad opcional (ppm, kg, años…) */
+  }
+
+  body { background: var(--green); }
+
+  .canvas {
+    width: 1080px; height: 1350px;
+    background: var(--green);
+    padding: 80px var(--feed-margin) 72px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Noise overlay */
+  .canvas::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.028 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .canvas > * { position: relative; z-index: 1; }
+
+  /* Stat number */
+  .stat-block {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  .stat-eyebrow {
+    font-family: var(--font-microcopy);
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.40em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+    margin-bottom: var(--sp-4);
+  }
+
+  .stat-value {
+    font-family: var(--font-display);
+    font-weight: 200;
+    font-size: 180px;
+    line-height: 0.88;
+    letter-spacing: -0.04em;
+    color: var(--white-pat);
+  }
+
+  .stat-hairline {
+    width: 80px; height: 1px;
+    background: var(--copper-light);
+    margin-top: var(--sp-5);
+  }
+
+  .stat-label {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--white-pat);
+    opacity: 0.88;
+    margin-top: var(--sp-4);
+    max-width: 680px;
+  }
+
+  .stat-source {
+    font-family: var(--font-body);
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--white-pat);
+    opacity: 0.45;
+    margin-top: var(--sp-3);
+    letter-spacing: 0.02em;
+  }
+
+  /* Badge pill — blanco */
+  .badge-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: 1px solid rgba(247,245,240,0.28);
+    border-radius: 999px;
+    font-family: var(--font-microcopy);
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--white-pat);
+    opacity: 0.75;
+    align-self: flex-start;
+    margin-top: var(--sp-5);
+  }
+
+  .spacer { flex: 1 1 auto; min-height: 8px; }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <!-- Top bar -->
+  <div style="display:flex;justify-content:space-between;align-items:center;">
+    <div class="b-wordmark b-wordmark--light">BIOCANN<sup>®</sup></div>
+    <div class="b-coord b-coord--light">42°08′S · 71°24′W · PATAGONIA</div>
+  </div>
+
+  <!-- Stat block -->
+  <div class="stat-block">
+    <div class="stat-eyebrow">[CATEGORÍA · DATO VERIFICADO]</div>
+
+    <!-- COMPLIANCE CRÍTICO: el dato protagonista debe ser de trazabilidad, producción,
+       calidad o proceso (pureza de lote, certificación, temporada, análisis de laboratorio).
+       PROHIBIDO: eficacia clínica, porcentajes terapéuticos, "pacientes mejorados", patologías. -->
+  <div class="stat-value">[VALOR]</div>
+
+    <div class="stat-hairline"></div>
+
+    <div class="stat-label">
+      [DESCRIPCIÓN DEL DATO — qué mide, de qué proceso proviene, por qué importa para la trazabilidad o la calidad del lote. No usar "garantiza" en sentido de eficacia.]
+    </div>
+
+    <div class="stat-source">
+      Fuente: [ORIGEN DEL DATO — laboratorio, temporada, lote, institución] · [AÑO]
+    </div>
+
+    <div class="badge-white">[CERTIFICACIÓN · PROTOCOLO · LOTE]</div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <!-- CTA opcional -->
+  <div class="b-cta-pill" style="margin-bottom:var(--sp-4);">
+    [CTA TEXTO]
+    <span class="arrow">→</span>
+    [CTA URL]
+  </div>
+
+  <!-- Footer -->
+  <div class="b-footer">
+    <div class="b-disclaimer">
+      El acceso a productos derivados de cannabis medicinal está sujeto a evaluación profesional y normativa vigente. Dato de uso educativo e institucional.
+    </div>
+    <div class="b-pagination">01 / 01</div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "jobs": [
+    {
+      "html": "layouts/POST-001-slide-01-portada.html",
+      "png":  "preview/POST-001-slide-01-portada.png"
+    },
+    {
+      "html": "layouts/POST-001-slide-02-problema.html",
+      "png":  "preview/POST-001-slide-02-problema.png"
+    },
+    {
+      "html": "layouts/POST-001-slide-03-hook.html",
+      "png":  "preview/POST-001-slide-03-hook.png"
+    },
+    {
+      "html": "layouts/POST-001-slide-04-biocann.html",
+      "png":  "preview/POST-001-slide-04-biocann.png"
+    },
+    {
+      "html": "layouts/POST-001-slide-05-trazabilidad.html",
+      "png":  "preview/POST-001-slide-05-trazabilidad.png"
+    },
+    {
+      "html": "layouts/POST-001-slide-06-acompanamiento.html",
+      "png":  "preview/POST-001-slide-06-acompanamiento.png"
+    },
+    {
+      "html": "layouts/POST-001-slide-07-cobertura.html",
+      "png":  "preview/POST-001-slide-07-cobertura.png"
+    },
+    {
+      "html": "layouts/POST-001-slide-08-cta.html",
+      "png":  "preview/POST-001-slide-08-cta.png"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "jobs": [
+    { "html": "layouts/POST-002/s1-portada.html",      "png": "preview/POST-002/s1-portada.png" },
+    { "html": "layouts/POST-002/s2-que-es.html",        "png": "preview/POST-002/s2-que-es.png" },
+    { "html": "layouts/POST-002/s3-quien.html",         "png": "preview/POST-002/s3-quien.png" },
+    { "html": "layouts/POST-002/s4-documentacion.html", "png": "preview/POST-002/s4-documentacion.png" },
+    { "html": "layouts/POST-002/s5-tiempo.html",        "png": "preview/POST-002/s5-tiempo.png" },
+    { "html": "layouts/POST-002/s6-comprar.html",       "png": "preview/POST-002/s6-comprar.png" },
+    { "html": "layouts/POST-002/s7-cta.html",           "png": "preview/POST-002/s7-cta.png" }
+  ]
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="x-apple-disable-message-reformatting">
+<title>{{ params.email_subject | default: "BIOCANN®" }}</title>
+<!--[if mso]>
+<noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+<![endif]-->
+<style>
+  /* === BIOCANN Editorial System — Email Adaptation v1.1 === */
+  /* Reset email defaults */
+  body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+  table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+  table { border-collapse: collapse !important; }
+  body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+  a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; }
+
+  /* BIOCANN tokens (inline duplicated where needed for client compat) */
+  body { background: #F7F5F0; font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #222A2B; }
+  .b-wordmark { font-family: 'Sora', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; letter-spacing: 0.04em; }
+  .b-headline { font-family: 'Sora', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 300; letter-spacing: -0.015em; line-height: 1.22; }
+  .b-eyebrow  { font-family: 'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; letter-spacing: 0.32em; text-transform: uppercase; }
+  .b-microcopy { font-family: 'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; }
+
+  /* Mobile */
+  @media screen and (max-width: 620px) {
+    .b-container { width: 100% !important; }
+    .b-pad-x { padding-left: 24px !important; padding-right: 24px !important; }
+    .b-headline { font-size: 30px !important; line-height: 1.22 !important; }
+    .b-cta-pill td { padding: 14px 20px !important; }
+  }
+</style>
+</head>
+
+<body>
+<!-- Preheader (hidden, shown in inbox preview) -->
+<div style="display:none;font-size:1px;color:#F7F5F0;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">
+  {{ params.email_preheader | default: "Acceso ordenado a cannabis medicinal · Patagonia · BIOCANN®" }}
+</div>
+
+<!-- Email body -->
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#F7F5F0;">
+  <tr>
+    <td align="center" style="padding: 24px 16px;">
+
+      <!-- Container 600px -->
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="b-container" style="width:600px;max-width:600px;background:#F7F5F0;">
+
+        <!-- Header bar -->
+        <tr>
+          <td class="b-pad-x" style="padding: 32px 48px 24px 48px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td align="left" valign="middle" class="b-wordmark" style="font-size:22px;color:#222A2B;">
+                  BIOCANN<sup style="font-size:10px;vertical-align:8px;opacity:0.85;">®</sup>
+                </td>
+                <td align="right" valign="middle" class="b-microcopy" style="font-size:9px;color:#222A2B;opacity:0.55;letter-spacing:0.30em;">
+                  42°08′S · 71°24′W · PATAGONIA
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Hairline -->
+        <tr>
+          <td class="b-pad-x" style="padding: 0 48px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td height="1" style="height:1px;background-color:#B07A4A;line-height:1px;font-size:1px;">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Optional hero photo (replace src or remove block) -->
+        {{#if params.hero_image}}
+        <tr>
+          <td style="padding: 32px 0 0 0;">
+            <img src="{{ params.hero_image }}" alt="" width="600" style="display:block;width:100%;height:auto;max-width:600px;">
+          </td>
+        </tr>
+        {{/if}}
+
+        <!-- Eyebrow -->
+        <tr>
+          <td class="b-pad-x" style="padding: 36px 48px 0 48px;">
+            <p class="b-eyebrow" style="margin:0;font-size:10px;color:#B07A4A;">{{ params.eyebrow | default: "Coberturas Biocann® · Acceso regulado" }}</p>
+          </td>
+        </tr>
+
+        <!-- Headline -->
+        <tr>
+          <td class="b-pad-x" style="padding: 16px 48px 0 48px;">
+            <h1 class="b-headline" style="margin:0;font-size:34px;color:#222A2B;">
+              {{{ params.headline }}}
+            </h1>
+          </td>
+        </tr>
+
+        <!-- Hairline divider -->
+        <tr>
+          <td class="b-pad-x" style="padding: 28px 48px 0 48px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+              <tr><td width="56" height="1" style="width:56px;height:1px;background-color:#B07A4A;line-height:1px;font-size:1px;">&nbsp;</td></tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Body -->
+        <tr>
+          <td class="b-pad-x" style="padding: 24px 48px 0 48px;">
+            <div style="font-family:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;line-height:1.65;color:#222A2B;">
+              {{{ params.body_html }}}
+            </div>
+          </td>
+        </tr>
+
+        <!-- CTA pill -->
+        <tr>
+          <td class="b-pad-x" style="padding: 32px 48px 0 48px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="b-cta-pill">
+              <tr>
+                <td align="center" style="border:1px solid #B07A4A;border-radius:999px;padding:13px 24px;">
+                  <a href="{{ params.cta_url | default: 'https://biocann.ar/pricing-plans/list' }}"
+                     class="b-microcopy"
+                     style="font-size:11px;color:#222A2B;text-decoration:none;letter-spacing:0.22em;">
+                    {{ params.cta_label | default: "Conocé los planes" }}
+                    <span style="font-family:'Inter',Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:0;">&nbsp;→&nbsp;</span>
+                    <span style="text-transform:lowercase;letter-spacing:0.05em;">{{ params.cta_url_label | default: "biocann.ar/pricing-plans/list" }}</span>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Disclaimer -->
+        <tr>
+          <td class="b-pad-x" style="padding: 56px 48px 32px 48px;">
+            <p style="margin:0;font-family:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:1.55;color:#222A2B;opacity:0.55;">
+              El acceso a productos y coberturas BIOCANN® está sujeto a evaluación profesional y documentación habilitante (REPROCANN o equivalente). Esta información tiene fines educativos y no reemplaza consulta ni prescripción médica.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Footer (legal + unsubscribe) -->
+        <tr>
+          <td style="background-color:#2F4F3E;padding: 36px 48px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="b-wordmark" style="font-size:18px;color:#F7F5F0;padding-bottom:12px;">
+                  BIOCANN<sup style="font-size:9px;vertical-align:7px;opacity:0.85;">®</sup>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-family:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:1.6;color:#F7F5F0;opacity:0.78;">
+                  Cannabis medicinal trazable, desde la Patagonia.<br>
+                  BIOCANN SRL · Epuyén, Chubut, Argentina<br>
+                  <a href="mailto:info@biocann.ar" style="color:#D6995E;text-decoration:none;">info@biocann.ar</a> ·
+                  <a href="https://wa.me/5491159842468" style="color:#D6995E;text-decoration:none;">WhatsApp</a> ·
+                  <a href="https://biocann.ar" style="color:#D6995E;text-decoration:none;">biocann.ar</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                    <tr><td width="40" height="1" style="width:40px;height:1px;background-color:#D6995E;line-height:1px;font-size:1px;">&nbsp;</td></tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top:16px;font-family:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;line-height:1.55;color:#F7F5F0;opacity:0.55;">
+                  Recibís este email porque te suscribiste vía formulario en biocann.ar o iniciaste contacto con nuestro equipo.
+                  <br><br>
+                  <a href="{{ unsubscribe }}" style="color:#D6995E;text-decoration:underline;">Darme de baja</a> ·
+                  <a href="{{ mirror }}" style="color:#D6995E;text-decoration:underline;">Ver en navegador</a> ·
+                  <a href="https://biocann.ar/legales" style="color:#D6995E;text-decoration:underline;">Política de privacidad</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </table>
+      <!-- /Container -->
+
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* BIOCANN® — Editorial Design System · Tokens v1.0
+   Single source of truth for color, typography, spacing.
+   Imported by all layouts. Never override locally — extend tokens here.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600&family=Space+Grotesk:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
+
+:root {
+  /* — Color tokens — institutional palette */
+  --green:        #2F4F3E; /* Verde Bosque BIOCANN */
+  --white-pat:    #F7F5F0; /* Blanco Patagónico */
+  --carbon:       #222A2B; /* Carbón */
+  --copper-base:  #B07A4A; /* Cobre Trazabilidad base (over light) */
+  --copper-light: #D6995E; /* Cobre Trazabilidad claro (over green) */
+  --grey-mineral: #E9ECEB; /* Gris Piedra (soporte) */
+
+  /* — Color tokens — line palettes */
+  --cbd-accent:    #6FAF8F;
+  --cbd-soft:      #A8D5BA;
+  --cbd-bg:        #EEF7F1;
+  --thc-accent:    #7A8F3A;
+  --thc-soft:      #B5C46A;
+  --thc-bg:        #F4F7E8;
+  --balance-accent:#4F7C74;
+  --balance-soft:  #8FB7AE;
+  --balance-bg:    #EDF5F3;
+
+  /* — Typography stacks (with web-safe fallbacks) */
+  --font-display:   'Sora', 'Telegraf', 'Söhne', -apple-system, system-ui, sans-serif;
+  --font-microcopy: 'Space Grotesk', 'IBM Plex Mono', 'JetBrains Mono', monospace;
+  --font-body:      'Inter', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+
+  /* — Spacing scale (base 8px) */
+  --sp-1:  8px;
+  --sp-2:  16px;
+  --sp-3:  24px;
+  --sp-4:  32px;
+  --sp-5:  48px;
+  --sp-6:  64px;
+  --sp-7:  80px;
+  --sp-8:  96px;
+
+  /* — Margins per canvas */
+  --feed-margin:  64px;
+  --story-margin: 80px;
+
+  /* — Hairline thickness */
+  --hairline: 1px;
+
+  /* — Pill geometry */
+  --pill-radius: 999px;
+  --pill-pad-y:  13px;
+  --pill-pad-x:  22px;
+
+  /* — Accent bar (Blanco Monolith left edge) */
+  --accent-bar-width: 6px;
+}
+
+/*
+  NOISE OVERLAY — REGLA OBLIGATORIA
+  Aplicar clase .noise-overlay en:
+    - .b-canvas con background --green
+    - .b-green-block
+    - cualquier bloque con fondo verde sólido
+  NO aplicar en fondos --white-pat (blanco patagónico).
+  NO aplicar sobre fotos (el noise ya existe en la textura fotográfica).
+*/
+
+/* — Reset minimal */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { overflow: hidden; }
+body { font-family: var(--font-body); -webkit-font-smoothing: antialiased; }
+
+/* — Subtle paper noise texture (used over green blocks) */
+.noise-overlay {
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.035 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}

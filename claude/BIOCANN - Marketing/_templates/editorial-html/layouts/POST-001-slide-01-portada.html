@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · POST-001 · Slide 01 — Portada</title>
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  :root {
+    --photo-src: url('../img/post001_slide1_patagonia.jpg');  /* Foto real: 20240415170325__MG_3906.JPG — Chacra y Cultivo Biocann */
+    --photo-pos: center 40%;
+    --photo-filter: contrast(1.06) saturate(0.92);
+  }
+  .b-photo { background-image: var(--photo-src); background-position: var(--photo-pos); filter: var(--photo-filter); }
+  .b-canvas { background: var(--green); }
+</style>
+</head>
+<body>
+  <div class="b-canvas b-canvas--feed">
+
+    <div class="b-photo b-photo--feed-full"></div>
+    <div class="b-photo-overlay"></div>
+
+    <div class="b-top-bar">
+      <div class="b-wordmark b-wordmark--light">BIOCANN<sup>®</sup></div>
+      <div class="b-coord b-coord--light">42°08′S · 71°24′W · PATAGONIA</div>
+    </div>
+
+    <div class="b-content-bottom">
+      <div class="b-eyebrow" style="margin-bottom: 22px;">CANNABIS MEDICINAL · PATAGONIA · GENÉTICA INASE</div>
+
+      <h1 class="b-headline b-headline--lg">
+        EL REPROCANN<br>
+        NO TERMINA<br>
+        EN EL PAPEL.
+      </h1>
+
+      <div class="b-hairline" style="margin-top: 30px; margin-bottom: 22px;"></div>
+
+      <div class="b-subhead" style="margin-top: 0; margin-bottom: 48px;">Lo que viene después es donde se juega el acceso real.</div>
+
+      <div class="b-footer">
+        <div class="b-disclaimer">
+          El acceso a productos derivados de cannabis medicinal está sujeto a evaluación profesional, documentación correspondiente y normativa vigente.
+        </div>
+        <div class="b-pagination" style="visibility: hidden;">01 / 08</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

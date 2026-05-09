@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · T04 Feed Product Showcase — ficha técnica de producto/lote</title>
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  /*
+    T04 — Feed Product Showcase
+    Foto de producto (packaging ámbar, etiqueta visible) arriba + ficha técnica abajo.
+    Uso: lanzamientos de lote, nuevos formatos, fichas de producto con datos de trazabilidad.
+  */
+  :root {
+    --photo-src: url('../img/sample_lab.jpg');
+    --photo-pos: center 45%;
+  }
+
+  body { background: var(--white-pat); }
+
+  .canvas {
+    width: 1080px; height: 1350px;
+    background: var(--white-pat);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Photo zone — top 52% */
+  .photo-zone {
+    height: 702px;
+    background-image: var(--photo-src);
+    background-size: cover;
+    background-position: var(--photo-pos);
+    position: relative;
+    flex-shrink: 0;
+  }
+  .photo-zone::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+      rgba(247,245,240,0) 0%,
+      rgba(247,245,240,0) 55%,
+      rgba(247,245,240,0.6) 80%,
+      rgba(247,245,240,1) 100%
+    );
+  }
+
+  /* Top bar on photo */
+  .photo-topbar {
+    position: absolute;
+    top: 52px; left: var(--feed-margin); right: var(--feed-margin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+  }
+
+  /* Batch badge on photo */
+  .batch-badge {
+    position: absolute;
+    bottom: 44px;
+    left: var(--feed-margin);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: 1px solid rgba(176,122,74,0.55);
+    border-radius: 999px;
+    background: rgba(247,245,240,0.92);
+    font-family: var(--font-microcopy);
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0.30em;
+    text-transform: uppercase;
+    color: var(--copper-base);
+  }
+  .batch-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--copper-base); }
+
+  /* Info zone — bottom 48% */
+  .info-zone {
+    flex: 1 1 auto;
+    padding: 36px var(--feed-margin) 56px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Product name */
+  .product-name {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: -0.018em;
+    color: var(--carbon);
+  }
+  .product-name em { font-style: italic; font-weight: 400; color: var(--green); }
+
+  .hairline-dark { width: 64px; height: 1px; background: var(--copper-base); margin-top: var(--sp-3); }
+
+  .product-desc {
+    font-family: var(--font-microcopy);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: var(--carbon);
+    opacity: 0.72;
+    margin-top: var(--sp-2);
+    max-width: 680px;
+  }
+
+  /* Data grid */
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(34,42,43,0.1);
+    margin-top: var(--sp-4);
+    border: 1px solid rgba(34,42,43,0.1);
+  }
+  .data-cell {
+    background: var(--white-pat);
+    padding: 18px 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .data-key {
+    font-family: var(--font-microcopy);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--carbon);
+    opacity: 0.48;
+  }
+  .data-val {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: var(--carbon);
+  }
+
+  .spacer { flex: 1 1 auto; }
+
+  /* Bottom CTA + footer */
+  .bottom-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: var(--sp-3);
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <!--
+    ADVERTENCIA EDITORIAL OBLIGATORIA — LEER ANTES DE PRODUCIR:
+    Esta template REQUIERE fotografía real de producto BIOCANN® con:
+    · Packaging ámbar cerrado
+    · Etiqueta con número de lote e identificadores INASE visibles
+    NO usar foto de IA, stock genérico de cannabis ni packaging discontinuado.
+    Ver Regla 4 — claude/BIOCANN - Marketing/brand kit/06_DESIGN_SYSTEM.md
+  -->
+
+  <!-- Photo zone -->
+  <div class="photo-zone">
+    <div class="photo-topbar">
+      <div class="b-wordmark">BIOCANN<sup>®</sup></div>
+      <div class="b-coord">42°08′S · 71°24′W · PATAGONIA</div>
+    </div>
+    <div class="batch-badge">
+      <div class="batch-dot"></div>
+      LOTE [CÓDIGO] · [FECHA ELABORACIÓN]
+    </div>
+  </div>
+
+  <!-- Info zone -->
+  <div class="info-zone">
+
+    <!-- COMPLIANCE: nombre del producto NO puede incluir referencias a condiciones médicas,
+         síntomas o patologías. Usar nombre técnico, ratio y formato únicamente.
+         La descripción solo puede referir a origen, proceso de elaboración y concentración.
+         AUDIENCIA: pacientes con REPROCANN vigente + pacientes sin REPROCANN (BIOCANN gestiona el trámite).
+         No asumir que el lector ya tiene REPROCANN — no excluir en el copy a quienes no lo tienen aún. -->
+    <div class="product-name">
+      [NOMBRE DEL PRODUCTO]<br>
+      <em>[RATIO · FORMATO · PRESENTACIÓN]</em>
+    </div>
+
+    <div class="hairline-dark"></div>
+
+    <div class="product-desc">
+      [DESCRIPCIÓN BREVE — origen patagónico, concentración analizada, método de elaboración. NO incluir indicaciones de uso, patologías ni referencias terapéuticas.]
+    </div>
+
+    <!-- Data grid -->
+    <div class="data-grid">
+      <div class="data-cell">
+        <div class="data-key">Ratio</div>
+        <div class="data-val">[20:1]</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-key">Contenido</div>
+        <div class="data-val">[30 ml]</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-key">Lote</div>
+        <div class="data-val">[LOT-XXX]</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-key">Genética</div>
+        <div class="data-val">[VAR INASE]</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-key">Elaboración</div>
+        <div class="data-val">[MES · AÑO]</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-key">Análisis</div>
+        <div class="data-val">[LAB CERT]</div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="bottom-area">
+      <div class="b-cta-pill b-cta-pill--dark">
+        VER DISPENSA
+        <span class="arrow">→</span>
+        biocann.ar/dispensa
+      </div>
+      <div style="font-family:var(--font-microcopy);font-size: 26px;letter-spacing:0.18em;color:var(--copper-base);">01 / 01</div>
+    </div>
+
+    <div style="font-family:var(--font-body);font-size: 18px;line-height:1.55;color:var(--carbon);opacity:0.38;margin-top:12px;max-width:800px;">
+      Acceso a productos derivados de cannabis sujeto a evaluación profesional, REPROCANN vigente y normativa regulatoria. Información educativa.
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
