@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · LinkedIn 12/05 — B2B Plataforma Integral</title>
+<link rel="stylesheet" href="../../_templates/editorial-html/tokens.css">
+<link rel="stylesheet" href="../../_templates/editorial-html/components.css">
+<style>
+  body { background: var(--green); margin: 0; }
+
+  /* Canvas LinkedIn 1200x628 */
+  .li-canvas {
+    width: 1200px;
+    height: 628px;
+    background: var(--green);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Columna izquierda — texto */
+  .li-left {
+    flex: 0 0 680px;
+    display: flex;
+    flex-direction: column;
+    padding: 64px 72px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Columna derecha — bloque cobre + deco */
+  .li-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(214,153,94,0.25);
+    padding: 48px 40px;
+    position: relative;
+  }
+
+  /* Número decorativo */
+  .li-num-deco {
+    font-family: var(--font-display);
+    font-weight: 200;
+    font-size: 220px;
+    line-height: 1;
+    color: var(--white-pat);
+    opacity: 0.04;
+    position: absolute;
+    right: -24px;
+    bottom: -20px;
+    letter-spacing: -0.06em;
+    user-select: none;
+  }
+
+  .li-wordmark {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--white-pat);
+    margin-bottom: 48px;
+  }
+
+  .li-eyebrow {
+    font-family: var(--font-microcopy);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+    margin-bottom: 20px;
+  }
+
+  .li-headline {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.10;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--white-pat);
+    margin: 0 0 24px 0;
+  }
+
+  .li-headline em {
+    font-style: italic;
+    color: var(--copper-light);
+  }
+
+  .li-hairline {
+    width: 60px;
+    height: 2px;
+    background: var(--copper-light);
+    margin-bottom: 20px;
+  }
+
+  .li-subhead {
+    font-family: var(--font-body);
+    font-size: 30px;
+    line-height: 1.60;
+    color: var(--white-pat);
+    opacity: 0.75;
+    max-width: 520px;
+    flex: 1;
+  }
+
+  .li-cta {
+    font-family: var(--font-microcopy);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+    margin-top: 28px;
+    padding: 12px 22px;
+    border: 1.5px solid rgba(214,153,94,0.55);
+    border-radius: 999px;
+    align-self: flex-start;
+  }
+
+  /* Right column content */
+  .li-data-block {
+    width: 100%;
+  }
+
+  .li-data-item {
+    margin-bottom: 28px;
+  }
+
+  .li-data-label {
+    font-family: var(--font-microcopy);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+    opacity: 0.75;
+    margin-bottom: 6px;
+  }
+
+  .li-data-value {
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--white-pat);
+  }
+
+  .li-disclaimer {
+    position: absolute;
+    bottom: 18px;
+    left: 72px;
+    right: 40px;
+    font-family: var(--font-microcopy);
+    font-size: 17px;
+    letter-spacing: 0.04em;
+    color: var(--white-pat);
+    opacity: 0.30;
+    line-height: 1.4;
+  }
+
+  .li-coord {
+    font-family: var(--font-microcopy);
+    font-size: 22px;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    color: var(--white-pat);
+    opacity: 0.40;
+    position: absolute;
+    bottom: 18px;
+    right: 40px;
+  }
+</style>
+</head>
+<body>
+  <div class="li-canvas">
+
+    <div class="li-num-deco">B2</div>
+
+    <!-- IZQUIERDA: TEXTO -->
+    <div class="li-left">
+      <div class="li-wordmark">BIOCANN<sup style="font-size: 22px;">®</sup></div>
+      <div class="li-eyebrow">B2B · SECTOR SALUD · CANNABIS MEDICINAL</div>
+      <h1 class="li-headline">
+        UNA PLATAFORMA<br>
+        INTEGRAL PARA<br>
+        EL SECTOR <em>SALUD.</em>
+      </h1>
+      <div class="li-hairline"></div>
+      <div class="li-subhead">
+        BIOCANN® integra cultivo, extracción CO₂ supercrítico, trazabilidad de lote, gestión de pacientes REPROCANN, coberturas activas y dispensa documentada. Un solo proveedor. Todo el sistema.
+      </div>
+      <div class="li-cta">CONOCER LA PLATAFORMA →</div>
+    </div>
+
+    <!-- DERECHA: DATA -->
+    <div class="li-right">
+      <div class="li-data-block">
+        <div class="li-data-item">
+          <div class="li-data-label">PRODUCCIÓN</div>
+          <div class="li-data-value">PATAGONIA · 700 MSNM</div>
+        </div>
+        <div class="li-data-item">
+          <div class="li-data-label">EXTRACCIÓN</div>
+          <div class="li-data-value">CO₂ SUPERCRÍTICO</div>
+        </div>
+        <div class="li-data-item">
+          <div class="li-data-label">GENÉTICA</div>
+          <div class="li-data-value">REGISTRO INASE</div>
+        </div>
+        <div class="li-data-item">
+          <div class="li-data-label">TRAZABILIDAD</div>
+          <div class="li-data-value">LOTE A PACIENTE</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DISCLAIMER -->
+    <div class="li-disclaimer">
+      El acceso a productos derivados de cannabis medicinal está sujeto a evaluación profesional, documentación habilitante y normativa vigente ANMAT/REPROCANN. Comunicación de carácter institucional e informativo. No constituye oferta comercial directa.
+    </div>
+    <div class="li-coord">42°08′S · 71°24′W</div>
+
+  </div>
+</body>
+</html>
