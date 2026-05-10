@@ -1,0 +1,10 @@
+{
+  "jobs": [
+    { "html": "story-25mayo-acceso-3pasos.html", "png": "story-25mayo-acceso-3pasos.png", "story": true },
+    { "html": "story-27mayo-equipo.html", "png": "story-27mayo-equipo.png", "story": true },
+    { "html": "story-28mayo-loscauces-5motivos.html", "png": "story-28mayo-loscauces-5motivos.png", "story": true },
+    { "html": "story-29mayo-acompanamiento.html", "png": "story-29mayo-acompanamiento.png", "story": true },
+    { "html": "story-30mayo-sistema-completo.html", "png": "story-30mayo-sistema-completo.png", "story": true },
+    { "html": "story-31mayo-cierre-mayo.html", "png": "story-31mayo-cierre-mayo.png", "story": true }
+  ]
+}

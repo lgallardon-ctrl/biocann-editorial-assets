@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · Story 7/05 — Teaser FAQ REPROCANN</title>
+<link rel="stylesheet" href="../../_templates/editorial-html/tokens.css">
+<link rel="stylesheet" href="../../_templates/editorial-html/components.css">
+<style>
+  body { background: var(--green); }
+  .b-canvas {
+    background: var(--green);
+    padding: 120px var(--story-margin) 96px;
+    display: flex;
+    flex-direction: column;
+  }
+  .b-wordmark { color: var(--white-pat); }
+  .b-coord { color: var(--white-pat); opacity: 0.55; }
+  .b-canvas .b-top-bar { position: static; padding: 0 0 48px 0; display: flex; }
+
+  /* Eyebrow cobre claro */
+  .b-eyebrow { color: var(--copper-light); }
+
+  /* Headline blanco patagónico */
+  .b-headline { color: var(--white-pat); }
+
+  /* Hairline */
+  .b-hairline { background: var(--copper-light); }
+
+  /* Subhead */
+  .b-subhead { color: var(--white-pat); opacity: 0.80; }
+
+  /* Disclaimer y paginación */
+  .b-disclaimer { color: var(--white-pat); opacity: 0.50; }
+  .b-pagination { color: var(--copper-light); }
+
+  /* Tag de feed */
+  .feed-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 28px;
+    border: 1.5px solid rgba(214, 153, 94, 0.60);
+    border-radius: 999px;
+    font-family: var(--font-microcopy);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+    align-self: flex-start;
+    margin-top: 48px;
+  }
+
+  /* Número decorativo grande */
+  .num-deco {
+    font-family: var(--font-display);
+    font-weight: 200;
+    font-size: 340px;
+    line-height: 1;
+    color: var(--white-pat);
+    opacity: 0.04;
+    position: absolute;
+    right: -20px;
+    bottom: 200px;
+    letter-spacing: -0.04em;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* Microcopy pie story */
+  .pie-story {
+    font-family: var(--font-microcopy);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.30em;
+    text-transform: uppercase;
+    color: var(--white-pat);
+    opacity: 0.50;
+  }
+</style>
+</head>
+<body>
+  <div class="b-canvas b-canvas--story noise-overlay">
+
+    <!-- Número decorativo fondo -->
+    <div class="num-deco">6</div>
+
+    <!-- Top bar -->
+    <div class="b-top-bar" style="position:static; padding:0 0 48px 0;">
+      <div class="b-wordmark b-wordmark--story">BIOCANN<sup>®</sup></div>
+      <div class="b-coord b-coord--story">42°08′S · 71°24′W · PATAGONIA</div>
+    </div>
+
+    <!-- Eyebrow -->
+    <div class="b-eyebrow b-eyebrow--story">FAQ · REPROCANN · HOY EN FEED</div>
+
+    <!-- Headline story — 78px dominante -->
+    <h1 class="b-headline b-headline--xl" style="margin-top: 160px; font-size: 82px; line-height: 1.08; max-width: 860px;">
+      ¿CUÁNTO<br>
+      SABÉS SOBRE<br>
+      <em>REPROCANN?</em>
+    </h1>
+
+    <!-- Hairline -->
+    <div class="b-hairline b-hairline--lg" style="margin-top: 60px;"></div>
+
+    <!-- Subhead -->
+    <div class="b-subhead b-subhead--story" style="margin-top: 40px; max-width: 720px;">
+      Hoy publicamos las 6 preguntas más frecuentes de pacientes. Sin rodeos.
+    </div>
+
+    <!-- CTA pill -->
+    <div class="feed-tag">
+      VER CARRUSEL EN FEED
+      <span style="font-family: var(--font-body); font-size: 36px; opacity: 0.85; letter-spacing: 0;">→</span>
+    </div>
+
+    <div class="b-spacer"></div>
+
+    <!-- Footer -->
+    <div class="b-footer">
+      <div class="pie-story">BIOCANN® · CANNABIS MEDICINAL · PATAGONIA</div>
+    </div>
+
+  </div>
+</body>
+</html>

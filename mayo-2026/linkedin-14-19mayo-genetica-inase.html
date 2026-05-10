@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · POST-014 · LinkedIn INASE</title>
+<link rel="stylesheet" href="../../_templates/editorial-html/tokens.css">
+<link rel="stylesheet" href="../../_templates/editorial-html/components.css">
+<style>
+  body { background: var(--green); margin: 0; padding: 0; }
+  .canvas { width: 1200px; height: 628px; display: flex; flex-direction: row; overflow: hidden; position: relative; }
+  .col-green { width: 528px; background: var(--green); padding: 52px 48px 48px 72px; display: flex; flex-direction: column; position: relative; flex-shrink: 0; }
+  .col-green::before { content: ''; position: absolute; inset: 0; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.030 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); pointer-events: none; }
+  .col-green > * { position: relative; z-index: 1; }
+  .divider { width: 1px; background: var(--copper-light); opacity: 0.4; flex-shrink: 0; }
+  .col-white { flex: 1 1 auto; background: var(--white-pat); padding: 52px 64px 48px 56px; display: flex; flex-direction: column; }
+  .lk-wordmark { font-family: var(--font-display); font-weight: 600; font-size: 30px; letter-spacing: 0.04em; color: var(--white-pat); }
+  .lk-wordmark sup { font-size: 18px; vertical-align: 8px; }
+  .lk-headline-green { font-family: var(--font-display); font-weight: 300; font-size: 40px; line-height: 1.1; letter-spacing: -0.02em; color: var(--white-pat); margin-top: 24px; max-width: 440px; }
+  .lk-headline-green em { font-style: italic; font-weight: 400; color: var(--copper-light); }
+  .lk-hairline-green { width: 48px; height: 1px; background: var(--copper-light); margin-top: 28px; }
+  .lk-coord { font-family: var(--font-microcopy); font-size: 22px; letter-spacing: 0.30em; text-transform: uppercase; color: var(--white-pat); opacity: 0.42; margin-top: auto; }
+  .lk-category { font-family: var(--font-microcopy); font-size: 26px; font-weight: 500; letter-spacing: 0.36em; text-transform: uppercase; color: var(--copper-base); display: flex; align-items: center; gap: 10px; }
+  .lk-category::before { content: ''; display: block; width: 20px; height: 1px; background: var(--copper-base); }
+  .lk-headline-white { font-family: var(--font-display); font-weight: 300; font-size: 34px; line-height: 1.15; letter-spacing: -0.018em; color: var(--carbon); margin-top: 20px; max-width: 560px; }
+  .lk-headline-white em { font-style: italic; font-weight: 400; color: var(--green); }
+  .lk-hairline-white { width: 48px; height: 1px; background: var(--copper-base); margin-top: 20px; }
+  .lk-subhead { font-family: var(--font-microcopy); font-size: 36px; font-weight: 500; line-height: 1.45; color: var(--carbon); opacity: 0.72; margin-top: 16px; max-width: 560px; }
+  .spacer { flex: 1 1 auto; }
+  .lk-cta { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border: 1px solid var(--copper-base); border-radius: 999px; font-family: var(--font-microcopy); font-size: 26px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--carbon); align-self: flex-start; }
+  .lk-disclaimer { font-family: var(--font-body); font-size: 18px; line-height: 1.5; color: var(--carbon); opacity: 0.38; margin-top: 10px; max-width: 580px; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="col-green">
+    <div class="lk-wordmark">BIOCANN<sup>®</sup></div>
+    <div class="lk-headline-green">Genética<br>registrada.<br><em>Calidad</em><br>documentada.</div>
+    <div class="lk-hairline-green"></div>
+    <div class="lk-coord">42°08′S · 71°24′W · PATAGONIA ARGENTINA</div>
+  </div>
+  <div class="divider"></div>
+  <div class="col-white">
+    <div class="lk-category">INASE · GENÉTICA · CALIDAD</div>
+    <div class="lk-headline-white">Nuestras variedades tienen registro oficial en INASE.</div>
+    <div class="lk-hairline-white"></div>
+    <div class="lk-subhead">BIOCANN® trabaja con genéticas cannabinoides registradas en el Instituto Nacional de Semillas (INASE), garantizando trazabilidad desde la semilla hasta el producto final.</div>
+    <div class="spacer"></div>
+    <div class="lk-cta">Ver estándares <span style="font-size: 26px;font-weight:300;">→</span> biocann.ar/nosotros</div>
+    <div class="lk-disclaimer">Información de carácter institucional. No constituye recomendación médica.</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · CAL-05 | Full Spectrum</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;700&family=Space+Grotesk:wght@300;400;500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1080px; height: 1350px; overflow: hidden; background: #222A2B; }
+
+  /* FULL BLEED MACRO PHOTO */
+  .hero {
+    position: absolute; inset: 0;
+    background: url('../photos/cal/cal-05-full-spectrum.jpg') center/cover no-repeat;
+  }
+
+  /* Top dark overlay */
+  .overlay-top {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 300px;
+    background: linear-gradient(to bottom, rgba(34,42,43,0.92) 0%, transparent 100%);
+  }
+  /* Bottom dark overlay */
+  .overlay-bottom {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 460px;
+    background: linear-gradient(to top, rgba(34,42,43,0.97) 0%, rgba(34,42,43,0.8) 60%, transparent 100%);
+  }
+
+  /* HORIZONTAL WHITE BAND — cuts through photo */
+  .band {
+    position: absolute;
+    top: 540px;
+    left: 0; right: 0;
+    height: 140px;
+    background: #F7F5F0;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    justify-content: space-between;
+    z-index: 3;
+  }
+  .band-headline {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+    letter-spacing: -0.02em;
+    color: #2F4F3E;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .band-sub {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: #222A2B;
+    letter-spacing: 0.04em;
+    text-align: right;
+    max-width: 320px;
+    line-height: 1.3;
+  }
+
+  /* TOP BAR */
+  .top-bar {
+    position: absolute;
+    top: 64px; left: 80px; right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+  }
+  .wordmark {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: #F7F5F0;
+  }
+  .wordmark sup { font-size: 19px; vertical-align: 10px; letter-spacing: 0; }
+  .eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.30em;
+    text-transform: uppercase;
+    color: rgba(214,153,94,0.85);
+  }
+
+  /* BOTTOM CONTENT */
+  .bottom {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 0 80px 68px;
+    z-index: 4;
+  }
+  .data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background: rgba(247,245,240,0.12);
+    margin-bottom: 32px;
+  }
+  .data-cell {
+    background: rgba(34,42,43,0.0);
+    padding: 24px 0;
+  }
+  .data-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(214,153,94,0.75);
+    margin-bottom: 8px;
+  }
+  .data-value {
+    font-family: 'Sora', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #F7F5F0;
+    line-height: 1.2;
+  }
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 24px;
+    border-top: 1px solid rgba(247,245,240,0.12);
+  }
+  .disclaimer {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: rgba(247,245,240,0.32);
+    line-height: 1.55;
+    max-width: 520px;
+  }
+  .cta {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #D6995E;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+  <div class="hero"></div>
+  <div class="overlay-top"></div>
+  <div class="overlay-bottom"></div>
+
+  <div class="band">
+    <div class="band-headline">FULL<br>SPECTRUM</div>
+    <div class="band-sub">La planta completa.<br>Sin aislar. Sin simplificar.</div>
+  </div>
+
+  <div class="top-bar">
+    <div class="wordmark">BIOCANN<sup>®</sup></div>
+    <div class="eyebrow">CIENCIA · FITOQUÍMICA</div>
+  </div>
+
+  <div class="bottom">
+    <div class="data-grid">
+      <div class="data-cell">
+        <div class="data-label">Perfil</div>
+        <div class="data-value">CBD · CBG · CBN · THC trazas</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-label">Origen</div>
+        <div class="data-value">Patagonia · GMP</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-label">Genética</div>
+        <div class="data-value">Registrada INASE</div>
+      </div>
+    </div>
+    <div class="bottom-row">
+      <div class="disclaimer">El acceso a productos de cannabis medicinal requiere prescripción y documentación REPROCANN vigente.</div>
+      <div class="cta">biocann.ar/productos</div>
+    </div>
+  </div>
+</body>
+</html>

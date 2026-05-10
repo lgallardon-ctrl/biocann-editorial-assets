@@ -1,0 +1,80 @@
+{
+  "jobs": [
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-01.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-01.png",
+      "story": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-02.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-02.png",
+      "story": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-03.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-03.png",
+      "story": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-04.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-04.png",
+      "story": false,
+      "retina": false,
+      "_compliance_hold": true,
+      "_compliance_motivo": "Menciona obligatoriedad de indicación médica y rol del profesional en acceso REPROCANN"
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-05.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-05.png",
+      "story": false,
+      "retina": false,
+      "_compliance_hold": true,
+      "_compliance_motivo": "Menciona vigencia y renovación REPROCANN, deriva a ANMAT. Verificar exactitud regulatoria"
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-06.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-06.png",
+      "story": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-07.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-07.png",
+      "story": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-08.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/carrusel-faq-reprocann-slide-08.png",
+      "story": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/story-07mayo-teaser-faq.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/story-07mayo-teaser-faq.png",
+      "story": true,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/story-08mayo-trazabilidad.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/story-08mayo-trazabilidad.png",
+      "story": true,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/story-09mayo-consulta-inicial.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/story-09mayo-consulta-inicial.png",
+      "story": true,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/story-10mayo-coberturas.html",
+      "png":  "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/semana-07-mayo/story-10mayo-coberturas.png",
+      "story": true,
+      "retina": false
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "jobs": [
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-03-08mayo-no-todo-igual.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-03-08mayo-no-todo-igual.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-05-11mayo-reprocann-dm.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-05-11mayo-reprocann-dm.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-11mayo-lote-historia.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-11mayo-lote-historia.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-06-12mayo-b2b-institucional.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-06-12mayo-b2b-institucional.png",
+      "story": false,
+      "linkedin": true,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-12mayo-origen-proceso.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-12mayo-origen-proceso.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s01.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s01.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s02.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s02.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s03.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s03.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s04.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s04.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s05.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s05.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s06.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-07-12mayo-5razones-s06.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-08-13mayo-lote-trazable.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-08-13mayo-lote-trazable.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-13mayo-papel-no-basta.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-13mayo-papel-no-basta.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-09-14mayo-ley-salome.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-09-14mayo-ley-salome.png",
+      "story": false,
+      "linkedin": true,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-14mayo-4pasos-teaser.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-14mayo-4pasos-teaser.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-10-14mayo-coberturas-4pasos-s01.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-10-14mayo-coberturas-4pasos-s01.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-10-14mayo-coberturas-4pasos-s02.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-10-14mayo-coberturas-4pasos-s02.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-10-14mayo-coberturas-4pasos-s03.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-10-14mayo-coberturas-4pasos-s03.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-10-14mayo-coberturas-4pasos-s04.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-10-14mayo-coberturas-4pasos-s04.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-10-14mayo-coberturas-4pasos-s05.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-10-14mayo-coberturas-4pasos-s05.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-11-15mayo-loscauces.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-11-15mayo-loscauces.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-15mayo-cordillera.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-15mayo-cordillera.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-17mayo-lote-trazable.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-17mayo-lote-trazable.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-13-18mayo-del-lote.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-13-18mayo-del-lote.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-14-19mayo-genetica-inase.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-14-19mayo-genetica-inase.png",
+      "story": false,
+      "linkedin": true,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-19mayo-inase-diferencial.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-19mayo-inase-diferencial.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s01.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s01.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s02.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s02.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s03.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s03.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s04.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s04.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s05.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s05.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s06.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-15-19mayo-faq-reprocann-s06.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-16-20mayo-origen-importa.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-16-20mayo-origen-importa.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-20mayo-700msnm.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-20mayo-700msnm.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-17-21mayo-plataforma-b2b.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-17-21mayo-plataforma-b2b.png",
+      "story": false,
+      "linkedin": true,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-21mayo-beneficios-activos.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-21mayo-beneficios-activos.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-18-21mayo-beneficios-s01.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-18-21mayo-beneficios-s01.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-18-21mayo-beneficios-s02.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-18-21mayo-beneficios-s02.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-18-21mayo-beneficios-s03.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-18-21mayo-beneficios-s03.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-18-21mayo-beneficios-s04.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-18-21mayo-beneficios-s04.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-18-21mayo-beneficios-s05.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-18-21mayo-beneficios-s05.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-19-22mayo-remarketing.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-19-22mayo-remarketing.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-22mayo-si-ya-preguntaste.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-22mayo-si-ya-preguntaste.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-24mayo-ley-salome.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-24mayo-ley-salome.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-21-25mayo-proceso-legal.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-21-25mayo-proceso-legal.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-25mayo-proceso-regulado.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-25mayo-proceso-regulado.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-22-26mayo-cierre-institucional.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-22-26mayo-cierre-institucional.png",
+      "story": false,
+      "linkedin": true,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s01.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s01.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s02.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s02.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s03.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s03.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s04.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s04.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s05.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s05.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s06.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-23-26mayo-que-mirar-s06.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-24-27mayo-equipo.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-24-27mayo-equipo.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-27mayo-equipo-proposito.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-27mayo-equipo-proposito.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-25-28mayo-cierre-b2b.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/linkedin-25-28mayo-cierre-b2b.png",
+      "story": false,
+      "linkedin": true,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-28mayo-5-motivos-teaser.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-28mayo-5-motivos-teaser.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s01.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s01.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s02.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s02.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s03.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s03.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s04.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s04.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s05.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s05.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s06.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/carrusel-26-28mayo-loscauces-s06.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-27-29mayo-seguimiento.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-27-29mayo-seguimiento.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-29mayo-seguimiento.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-29mayo-seguimiento.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-30mayo-sistema-completo.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-30mayo-sistema-completo.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-31mayo-cierre-patagonia.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/story-31mayo-cierre-patagonia.png",
+      "story": true,
+      "linkedin": false,
+      "retina": false
+    },
+    {
+      "html": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-29-31mayo-resumen.html",
+      "png": "/Users/Leo/Claud Brain/BIOCANN - IA TEAM/claude/BIOCANN - Marketing/_renders/mayo-2026/feed-29-31mayo-resumen.png",
+      "story": false,
+      "linkedin": false,
+      "retina": false
+    }
+  ]
+}

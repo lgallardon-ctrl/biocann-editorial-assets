@@ -1,0 +1,10 @@
+{
+  "jobs": [
+    { "html": "story-19mayo-inase.html", "png": "story-19mayo-inase.png", "story": true },
+    { "html": "story-20mayo-patagonia-700.html", "png": "story-20mayo-patagonia-700.png", "story": true },
+    { "html": "story-21mayo-coberturas-beneficios.html", "png": "story-21mayo-coberturas-beneficios.png", "story": true },
+    { "html": "story-22mayo-remarketing.html", "png": "story-22mayo-remarketing.png", "story": true },
+    { "html": "story-23mayo-loscauces-dia.html", "png": "story-23mayo-loscauces-dia.png", "story": true },
+    { "html": "story-24mayo-ley-salome.html", "png": "story-24mayo-ley-salome.png", "story": true }
+  ]
+}

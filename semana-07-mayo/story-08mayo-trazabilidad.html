@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · Story 8/05 — Trazabilidad Lote</title>
+<link rel="stylesheet" href="../../_templates/editorial-html/tokens.css">
+<link rel="stylesheet" href="../../_templates/editorial-html/components.css">
+<style>
+  :root {
+    --photo-src: url('./bg-story-08mayo-lab.jpg');
+    --photo-pos: center 30%;
+    --photo-filter: contrast(1.06) saturate(0.88) brightness(0.92);
+  }
+
+  body { background: var(--green); }
+
+  /* Photo zone */
+  .b-photo {
+    background-image: var(--photo-src);
+    background-position: var(--photo-pos);
+    filter: var(--photo-filter);
+  }
+
+  /* Product tag override — light sobre foto escura */
+  .b-product-tag {
+    color: var(--white-pat);
+    opacity: 0.85;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  }
+
+  /* Wordmark + coord sobre foto */
+  .b-wordmark--story { color: var(--white-pat); text-shadow: 0 1px 3px rgba(0,0,0,0.45); }
+  .b-coord--story    { color: var(--white-pat); opacity: 0.80; text-shadow: 0 1px 2px rgba(0,0,0,0.35); }
+
+  /* Divider: 8px cobre (override del 1px del componente base) */
+  .b-divider { height: 8px; }
+
+  /* Green block */
+  .b-green-block--story { height: 740px; }
+
+  /* CTA modo DM — sin URL visible */
+  .cta-dm {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 32px;
+    border: 1.5px solid rgba(214, 153, 94, 0.65);
+    border-radius: 999px;
+    font-family: var(--font-microcopy);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+    align-self: flex-start;
+    margin-top: 40px;
+  }
+
+  /* Pie técnico */
+  .pie-story {
+    font-family: var(--font-microcopy);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.30em;
+    text-transform: uppercase;
+    color: var(--white-pat);
+    opacity: 0.50;
+  }
+</style>
+</head>
+<body>
+  <div class="b-canvas b-canvas--story">
+
+    <!-- ZONA FOTO — 1180px -->
+    <div class="b-photo b-photo--story-top">
+      <div class="b-top-bar">
+        <div class="b-wordmark b-wordmark--story">BIOCANN<sup>®</sup></div>
+        <div class="b-coord b-coord--story">42°08′S · 71°24′W · PATAGONIA</div>
+      </div>
+      <div class="b-product-tag" style="bottom: 36px; left: var(--story-margin);">
+        TRAZABILIDAD · LOTE DOCUMENTADO
+      </div>
+    </div>
+
+    <!-- DIVISOR COBRE — 8px -->
+    <div class="b-divider"></div>
+
+    <!-- BLOQUE VERDE — 740px -->
+    <div class="b-green-block b-green-block--story noise-overlay">
+
+      <div class="b-eyebrow b-eyebrow--story">TRAZABILIDAD · CALIDAD · BIOCANN®</div>
+
+      <h1 class="b-headline b-headline--story" style="font-size: 66px; line-height: 1.10; margin-top: 28px; max-width: 860px;">
+        ¿SABÉS DE QUÉ<br>
+        LOTE VIENE<br>
+        LO QUE <em>TOMÁS?</em>
+      </h1>
+
+      <div class="b-hairline b-hairline--lg" style="margin-top: 36px;"></div>
+
+      <div class="b-subhead b-subhead--story" style="margin-top: 26px; max-width: 780px;">
+        No es una pregunta retórica. Cada producto BIOCANN® tiene número de lote, análisis documentado y origen verificable.
+      </div>
+
+      <!-- CTA DM (sin URL pública) -->
+      <div class="cta-dm">
+        ESCRIBÍ COBERTURA POR DM
+        <span style="font-family: var(--font-body); font-size: 36px; opacity: 0.85; letter-spacing: 0;">→</span>
+      </div>
+
+      <div class="b-spacer"></div>
+
+      <!-- Footer -->
+      <div class="b-footer">
+        <div class="b-disclaimer">
+          El acceso a productos derivados de cannabis medicinal está sujeto a evaluación profesional, documentación correspondiente y normativa vigente. La información brindada no reemplaza la consulta médica.
+        </div>
+        <div class="pie-story" style="white-space: nowrap; text-align: right;">
+          GENÉTICA INASE<br>700 MSNM · PATAGONIA
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

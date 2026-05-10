@@ -1,0 +1,17 @@
+{
+  "jobs": [
+    { "html": "carrusel-co2-slide-01.html", "png": "carrusel-co2-slide-01.png", "story": false },
+    { "html": "carrusel-co2-slide-02.html", "png": "carrusel-co2-slide-02.png", "story": false },
+    { "html": "carrusel-co2-slide-03.html", "png": "carrusel-co2-slide-03.png", "story": false },
+    { "html": "carrusel-co2-slide-04.html", "png": "carrusel-co2-slide-04.png", "story": false },
+    { "html": "carrusel-co2-slide-05.html", "png": "carrusel-co2-slide-05.png", "story": false },
+    { "html": "carrusel-co2-slide-06.html", "png": "carrusel-co2-slide-06.png", "story": false },
+    { "html": "carrusel-co2-slide-07.html", "png": "carrusel-co2-slide-07.png", "story": false },
+    { "html": "feed-11mayo-primera-consulta.html", "png": "feed-11mayo-primera-consulta.png", "story": false },
+    { "html": "feed-14mayo-origen-importa.html", "png": "feed-14mayo-origen-importa.png", "story": false },
+    { "html": "story-11mayo-primera-consulta.html", "png": "story-11mayo-primera-consulta.png", "story": true },
+    { "html": "story-12mayo-patagonia-origen.html", "png": "story-12mayo-patagonia-origen.png", "story": true },
+    { "html": "story-13mayo-coberturas-pasos.html", "png": "story-13mayo-coberturas-pasos.png", "story": true },
+    { "html": "story-14mayo-origen.html", "png": "story-14mayo-origen.png", "story": true }
+  ]
+}

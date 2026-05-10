@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · POST-011 · Los Cauces</title>
+<link rel="stylesheet" href="../../_templates/editorial-html/tokens.css">
+<link rel="stylesheet" href="../../_templates/editorial-html/components.css">
+<style>
+  body { background: var(--green); }
+  .b-canvas {
+    background: url('../photos/gus01959.jpg') center/cover no-repeat;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .b-canvas::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(47,79,62,0.96) 0%, rgba(47,79,62,0.82) 40%, rgba(47,79,62,0.2) 70%, transparent 100%);
+    pointer-events: none;
+  }
+  .overlay-content {
+    position: absolute;
+    inset: 0;
+    padding: 96px var(--feed-margin) 80px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  .b-wordmark { color: var(--white-pat); }
+  .b-coord { color: var(--white-pat); opacity: 0.55; }
+</style>
+</head>
+<body>
+  <div class="b-canvas b-canvas--feed noise-overlay">
+    
+    <div class="overlay-content">
+      <div class="b-top-bar" style="position:static;padding:0 0 36px 0;">
+        <div class="b-wordmark">BIOCANN<sup>®</sup></div>
+        <div class="b-coord">42°08′S · 71°24′W · PATAGONIA</div>
+      </div>
+      <div class="b-spacer"></div>
+      <div class="b-eyebrow" style="color:var(--copper-light);margin-bottom:20px">LOS CAUCES® · PATAGONIA</div>
+      <h1 class="b-headline b-headline--xl" style="font-size:72px">
+        Una experiencia
+diseñada en
+<em>Patagonia.</em>
+      </h1>
+      <div class="b-hairline b-hairline--lg" style="margin-top: 40px;"></div>
+      <div class="b-subhead" style="margin-top:28px;color:rgba(247,245,240,0.88)">Reserva cannábica en Chubut. Entorno, conocimiento y acceso regulado.</div>
+      <div class="b-cta-pill" style="margin-bottom: 28px;">Reservar <span class="arrow">→</span> reservaloscauces.com</div>
+      <div class="b-footer" style="margin-top:auto;padding-top:24px">
+        <div class="b-disclaimer" style="color:rgba(247,245,240,0.55)">El acceso a productos derivados de cannabis medicinal está sujeto a evaluación profesional, documentación correspondiente y normativa vigente.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

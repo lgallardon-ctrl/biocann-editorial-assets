@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BIOCANN · CAL-06 | Cultivo Patagonia</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;700&family=Space+Grotesk:wght@300;400;500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1080px; height: 1350px; overflow: hidden; background: #F7F5F0; }
+
+  /* PHOTO — top 62% full width */
+  .photo {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 838px;
+    background: url('../photos/cal/cal-photo-gus01953.jpg') center 20%/cover no-repeat;
+  }
+  /* Gradient to blend into white */
+  .photo::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(247,245,240,0.0) 0%,
+      rgba(247,245,240,0.0) 60%,
+      rgba(247,245,240,0.9) 85%,
+      rgba(247,245,240,1.0) 100%
+    );
+  }
+
+  /* Top-left BIOCANN® on photo — dark background chip */
+  .brand-chip {
+    position: absolute;
+    top: 60px; left: 80px;
+    z-index: 2;
+    background: rgba(47,79,62,0.92);
+    padding: 16px 28px;
+    backdrop-filter: blur(4px);
+  }
+  .wordmark {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: #F7F5F0;
+  }
+  .wordmark sup { font-size: 16px; vertical-align: 9px; letter-spacing: 0; }
+
+  /* Top-right metadata */
+  .photo-meta {
+    position: absolute;
+    top: 76px; right: 80px;
+    z-index: 2;
+    text-align: right;
+  }
+  .photo-meta-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(247,245,240,0.70);
+  }
+  .photo-meta-sub {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    color: rgba(247,245,240,0.45);
+    margin-top: 4px;
+  }
+
+  /* WHITE BOTTOM CONTENT */
+  .content {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 512px;
+    padding: 0 80px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: #2F4F3E;
+    margin-bottom: 20px;
+  }
+  .headline {
+    font-family: 'Sora', sans-serif;
+    font-weight: 200;
+    font-size: 78px;
+    line-height: 0.93;
+    letter-spacing: -0.035em;
+    color: #222A2B;
+    margin-bottom: 32px;
+  }
+  .hairline {
+    width: 48px; height: 2px;
+    background: #B07A4A;
+    margin-bottom: 28px;
+  }
+  .subhead {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(34,42,43,0.65);
+    line-height: 1.45;
+    max-width: 640px;
+    margin-bottom: 36px;
+  }
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .disclaimer {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: rgba(34,42,43,0.38);
+    line-height: 1.55;
+    max-width: 500px;
+  }
+  .coord {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(34,42,43,0.38);
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+  <div class="photo">
+    <div class="brand-chip">
+      <div class="wordmark">BIOCANN<sup>®</sup></div>
+    </div>
+    <div class="photo-meta">
+      <div class="photo-meta-label">Cultivo controlado</div>
+      <div class="photo-meta-sub">Protocolo GMP · Patagonia</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="eyebrow">PRODUCCIÓN · CULTIVO REGISTRADO</div>
+    <div class="headline">Protocolo,<br>no azar.</div>
+    <div class="hairline"></div>
+    <div class="subhead">Cada planta cultivada bajo control ambiental, trazabilidad activa y genética INASE certificada.</div>
+    <div class="footer-row">
+      <div class="disclaimer">Producción bajo normativa nacional de cannabis medicinal. Acceso sujeto a documentación REPROCANN.</div>
+      <div class="coord">42°08′S · Patagonia</div>
+    </div>
+  </div>
+</body>
+</html>
